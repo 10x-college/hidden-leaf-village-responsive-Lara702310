@@ -1,0 +1,81 @@
+@use "./variebel";
+
+@mixin header-title-st {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 100%;
+  color: variebel.$main-header-text-color;
+}
+
+@mixin header-secondary-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: variebel.$main-header-secondary-color;
+}
+
+@mixin nav-bar($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin card-grid($justify, $align) {
+  display: grid;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin nav-bar-links {
+  width: 11.3rem;
+  height: 3.7rem;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 2%;
+  color: variebel.$main-header-secondary-color;
+  border-radius: 0.8rem;
+}
+
+@mixin card-style {
+  width: 32.4rem;
+  height: 20rem;
+  border-top: 0.4rem solid;
+  border-radius: 1.2rem;
+  border-top-color: variebel.$bg-header-color;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@mixin card-header {
+  width: 15.9rem;
+  height: 2.9rem;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: variebel.$card-header-title;
+}
+
+@mixin card-header-secondary {
+  width: 25.5rem;
+  height: 10rem;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  pad: 1rem;
+  color: variebel.$card-header-secondary;
+}
+
+@mixin min-paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: variebel.$main-header-text-color;
+}
